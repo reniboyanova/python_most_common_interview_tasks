@@ -1,4 +1,3 @@
-# importing libraries
 import time
 import math
 
@@ -35,17 +34,13 @@ def factorial(num):
 # calling the function.
 factorial(10)
 
-# Пример 1: Декоратор, който измерва времето за изпълнение на функция
-
-import time
-
 
 def timing_decorator(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()
         result = func(*args, **kwargs)
         end_time = time.time()
-        print(f"{func.__name__} изпълнена за {end_time - start_time} секунди")
+        print(f"{func.__name__} is invoked for {end_time - start_time} seconds")
         return result
 
     return wrapper
@@ -59,13 +54,13 @@ def slow_function():
 slow_function()
 
 
-# Пример 2: Декоратор, който валидира входни данни
+# Decorator for validation the data
 
 def validate_input(func):
     def wrapper(*args, **kwargs):
         for arg in args:
             if not isinstance(arg, int):
-                raise ValueError("Всички аргументи трябва да са цели числа")
+                raise ValueError("All values need to be even numbers!")
         return func(*args, **kwargs)
 
     return wrapper
@@ -77,11 +72,10 @@ def add_numbers(a, b):
 
 
 result = add_numbers(3, 5)
+# result = add_numbers("3", 5)  # ValueError
 
 
-# result = add_numbers("3", 5)  # Този ред ще предизвика ValueError
-
-# Пример 3: Декоратор, който умножава резултата по 2
+# Decorator for multiply the power of 2 result
 
 def multiply_by_two_decorator(func):
     def wrapper(*args, **kwargs):
@@ -96,6 +90,6 @@ def square(x):
     return x * x
 
 
-result = square(4)  # Резултатът ще бъде 32 (4 * 4 * 2)
+result = square(4)  
 
 print(result)

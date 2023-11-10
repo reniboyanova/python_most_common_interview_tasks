@@ -23,7 +23,6 @@ def find_l_c_m(num1, num2):
 
 # Second variant:
 def find_l_c_m_2(num1, num2):
-    # Намиране на по-голямото число между num1 и num2
     max_num = max(num1, num2)
 
     while True:

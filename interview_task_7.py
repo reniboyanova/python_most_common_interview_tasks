@@ -21,18 +21,6 @@ def find_h_c_f(num1, num2):
 
     print(highest_num_to_divide)
 
-# алгоритъма на Евклид.
-def find_h_c_f_2(num1, num2):
-    print(f"Initial values: num1 = {num1}, num2 = {num2}")
-
-    while num2:
-        print(f"Current values: num1 = {num1}, num2 = {num2}")
-
-        num1, num2 = num2, num1 % num2
-
-    print(f"HCF: {num1}")
-
 
 if __name__ == "__main__":
     find_h_c_f(16, 24)
-    find_h_c_f_2(16, 24)

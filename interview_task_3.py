@@ -4,7 +4,7 @@
 # Output : {11: 2, 45: 3, 8: 1, 23: 2, 89: 1}
 
 
-# 1st variant - РЕНИ:
+# 1st variant:
 
 def count_occurrence(input_list):
     dict_to_return = {}
@@ -14,7 +14,7 @@ def count_occurrence(input_list):
 
     return dict_to_return
 
-# 2nd variant - GPT:
+# 2nd variant
 
 from collections import defaultdict
 

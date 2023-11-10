@@ -35,14 +35,13 @@ def spiral_order2(matrix):
     return result
 
 
-# Тук се вижда нагледно какво се случва:
 def spiral_order3(matrix):
     result = []
     while matrix:
-        result += matrix[0]  # Добавяме първия ред към резултата
-        matrix = matrix[1:]  # Премахваме първия ред
-        if matrix and matrix[0]:  # Проверяваме дали има още редове
-            matrix = list(zip(*matrix))[::-1]  # Завъртаме матрицата обратно на часовниковата стрелка
+        result += matrix[0]  
+        matrix = matrix[1:]  
+        if matrix and matrix[0]:  
+            matrix = list(zip(*matrix))[::-1]  
     return result
 
 # Result:

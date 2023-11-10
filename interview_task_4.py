@@ -4,7 +4,7 @@
 # sentence1 = "Hi all, my name is Tom...I am originally from Australia."
 # sentence2 = "I need to work very hard to learn more about algorithms in Python!"
 
-#Correct !!! Reni
+#1 variant
 def average_word_length(sentence):
     signs = ",-!?'@&()[]{}:"
     new_sentence = ''
@@ -21,7 +21,7 @@ def average_word_length(sentence):
     print(f"Average len of word in this sentence:\n'{sentence}'\nis: {average_word_len:.2f}")
 
 
-# Not Correct - but they want this output
+# 2 variant: 
 def average_word_length_2(sentence):
     signs = ".,-!?'@&()[]{}:"
     new_sentence = ''
